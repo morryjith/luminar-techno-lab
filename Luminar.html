@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminar Website</title>
+    <link rel="icon" href="data:image/jpeg;base64,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">
+    <link rel="stylesheet" href="./luminar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                
+                <a class="navbar-brand" href="#"><img src="data:image/jpeg;base64,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tHYfFd2LAB/c11KZv7vM0xB11DZsvlz15UinvY2/PLRCBKl4nakSZszaqwQgKzNmZc4VVUEscpvYA6X8K8SbZiDIpL3kAKjhSm9/2NCOoPLraqyLdnIkiJIpV5VkQSxl+GqoECKVkVrjLo17gaa8zPwuy2UYfNKXaANdiCS+ZcvMsSLX6ljpqSdaEU9evAp8q9zbcgUAlmILsgKxyP3kcxsvdU97MpFuttL1mO0orMc/syJE2hFnkyZFOnM8VP3qhxbGyxqmf2cS+Ivl+PM82Tn04mW/le3SsM+w2aVyJQInnixDpkObPCI8oV89ghMEZIKk+1rqLN1hx6w9pUfKpabchPE7zDhAly0cihQADqSoF7EG3Mg3r3PtiBJOG0gDAqp0YhS1siuwGVGOYWDEE5hbnWHF7G4iYpc9vdPXLfJ8Gsfj3vZv051Hxew3cyqJlWGds0qGO76qqOEfOAoYIOasRc2PLKhnXdw5qYarA7Uhuw4gukiRMOoeTKEU+udfrqwrW8VuwHk4okyucQkxsvtKhjYRPr3u9FmDc1LG2hYNslQ4MH0qDGSUpSqqEpSlESlKURKUpREpSlESlKURKrNtbFgxScOeNXHS+hU+KkaqfSrOlSCQZCAwZC5LtHstMLFoDxl6K5CsP4K3rp6VDG6+MvbgP9Q/je1dmpXo0/ilZoggHx9itbNtqNEEArm2xuz5yQ2JbIv6NCCx8i3JR6X9RW+4DARQoEiRUUdAPvPUnzOtTKVlr7VUrn5zbTLrnK41az6n1FKUpWdckpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlESlKURKUpREpSlEX//2Q==" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+            </div>        
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="navlink" class="nav-link fw-bold" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlink" class="nav-link fw-bold text-decoration-underline" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlink" class="nav-link fw-bold" href="#">Placements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlink" class="nav-link fw-bold" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlink" class="nav-link fw-bold" href="#">About&nbsp;us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlink" class="nav-link fw-bold" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+        <div id="main2" class="container-fluid">
+            <div class="div2main1">   
+                <p class="div2head1">
+                    Best Data Science,Big Data Courses
+                </p>
+                <p class="div2head2">
+                    Luminar Technolab | Kochi,Kerala
+                </p> 
+                <p class="div2head3">
+                    Technolab, No.1 Software Training Institute offers various Software Courses along with 100% Guaranteed Placement assistance. We provide Big Data Training, Data Science, Python,Mean Stack,Software Testing & many more
+                </p>     
+                <button id="btnn" type="button" class="btn btn-primary">
+                    Enquire now
+                </button>
+            </div>
+
+            <div class="div2main2">
+                <img class="div2main2img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPmfJTkXHuRT0J3NAighv0uz0qQpvHUfO9zmEf-zQkvA&usqp=CAU&ec=48665698" alt="">
+            </div>
+        </div>
+    
+        <div id="main3" class="container">
+            <p class="div3head1">
+                Our 100% Job Oriented Training Programs
+            </p>
+            <p class="div3head2">
+                We are focused on providing advanced level software training like Big Data Training, Hadoop Training, Data Science Training, Python Training, Machine Learning Training, Selenium Training in Cochin Kerala.
+            </p>
+
+            <nav id="search" class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </nav>
+        </div>
+
+        <div id="main4" class="container-fluid">
+            
+            <div class="div4main">
+                <img class="div4img" src="https://luminartechnolabbucket.s3.ap-south-1.amazonaws.com/fe964743-1e77-427b-aab2-274f850b0e70-asset-1.svg" alt="">
+                <h5 class="div4heading1">
+                    Software Testing Specialist<br>
+                </h5>
+                <p class="div4head1">
+                    Manual Testing, Java foundations, Mobile Testing, Automation Testing, Selenium IDE, Selenium Web driver, Selenium Advanced Web driver, Selenium Grid, TestNG, SQL workshop, Performance Testing, JMeter - Advanced, POSTMAN, API Testing, JIRA, Course Project<br>
+                </p>
+                <p class="div4head2">
+                    <h5 class="div4heading2">
+                        Next Batch:<br>
+                    </h5>
+                        Cochin: May 10th 2023 (Offline & Online)<br>
+                        Calicut: May 17th 2023 (03:30 pm - 05:30 pm)<br>
+                </p>
+                <p class="div4head3">       
+                    <h5 class="div4heading2">
+                        Duration:<br>
+                    </h5>
+                    4 Months, 5 Days a Week, 1.5 - 2 Hours/day<br>
+                </p>
+                <p class="div4head4">
+                    <h5 class="div4heading2">   
+                    Course Fee:<br>
+                    </h5>
+                    Offline : 31500<br>
+                    Online : 29500<br>
+                </p>
+                <a class="div4link" href="">
+                    View More
+                </a>
+            </div>
+
+            <div class="div4main">
+                <img class="div4img" src="https://luminartechnolabbucket.s3.ap-south-1.amazonaws.com/fe964743-1e77-427b-aab2-274f850b0e70-asset-1.svg" alt="">
+                <h5 class="div4heading1">
+                    Software Testing Specialist<br>
+                </h5>
+                <p class="div4head1">
+                    Manual Testing, Java foundations, Mobile Testing, Automation Testing, Selenium IDE, Selenium Web driver, Selenium Advanced Web driver, Selenium Grid, TestNG, SQL workshop, Performance Testing, JMeter - Advanced, POSTMAN, API Testing, JIRA, Course Project<br>
+                </p>
+                <p class="div4head2">
+                    <h5 class="div4heading2">
+                        Next Batch:<br>
+                    </h5>
+                        Cochin: May 10th 2023 (Offline & Online)<br>
+                        Calicut: May 17th 2023 (03:30 pm - 05:30 pm)<br>
+                </p>
+                <p class="div4head3">       
+                    <h5 class="div4heading2">
+                        Duration:<br>
+                    </h5>
+                    4 Months, 5 Days a Week, 1.5 - 2 Hours/day<br>
+                </p>
+                <p class="div4head4">
+                    <h5 class="div4heading2">   
+                    Course Fee:<br>
+                    </h5>
+                    Offline : 31500<br>
+                    Online : 29500<br>
+                </p>
+                <a class="div4link" href="">
+                    View More
+                </a>
+            </div>
+
+            <div class="div4main">
+                <img class="div4img" src="https://luminartechnolabbucket.s3.ap-south-1.amazonaws.com/fe964743-1e77-427b-aab2-274f850b0e70-asset-1.svg" alt="">
+                <h5 class="div4heading1">
+                    Software Testing Specialist<br>
+                </h5>
+                <p class="div4head1">
+                    Manual Testing, Java foundations, Mobile Testing, Automation Testing, Selenium IDE, Selenium Web driver, Selenium Advanced Web driver, Selenium Grid, TestNG, SQL workshop, Performance Testing, JMeter - Advanced, POSTMAN, API Testing, JIRA, Course Project<br>
+                </p>
+                <p class="div4head2">
+                    <h5 class="div4heading2">
+                        Next Batch:<br>
+                    </h5>
+                        Cochin: May 10th 2023 (Offline & Online)<br>
+                        Calicut: May 17th 2023 (03:30 pm - 05:30 pm)<br>
+                </p>
+                <p class="div4head3">       
+                    <h5 class="div4heading2">
+                        Duration:<br>
+                    </h5>
+                    4 Months, 5 Days a Week, 1.5 - 2 Hours/day<br>
+                </p>
+                <p class="div4head4">
+                    <h5 class="div4heading2">   
+                    Course Fee:<br>
+                    </h5>
+                    Offline : 31500<br>
+                    Online : 29500<br>
+                </p>
+                <a class="div4link" href="">
+                    View More
+                </a>
+            </div>
+
+        </div>
+
+        <div id="main5" class="container-fluid">
+
+            <div class="div4main">
+                <img class="div4img" src="https://luminartechnolabbucket.s3.ap-south-1.amazonaws.com/fe964743-1e77-427b-aab2-274f850b0e70-asset-1.svg" alt="">
+                <h5 class="div4heading1">
+                    Software Testing Specialist<br>
+                </h5>
+                <p class="div4head1">
+                    Manual Testing, Java foundations, Mobile Testing, Automation Testing, Selenium IDE, Selenium Web driver, Selenium Advanced Web driver, Selenium Grid, TestNG, SQL workshop, Performance Testing, JMeter - Advanced, POSTMAN, API Testing, JIRA, Course Project<br>
+                </p>
+                <p class="div4head2">
+                    <h5 class="div4heading2">
+                        Next Batch:<br>
+                    </h5>
+                        Cochin: May 10th 2023 (Offline & Online)<br>
+                        Calicut: May 17th 2023 (03:30 pm - 05:30 pm)<br>
+                </p>
+                <p class="div4head3">       
+                    <h5 class="div4heading2">
+                        Duration:<br>
+                    </h5>
+                    4 Months, 5 Days a Week, 1.5 - 2 Hours/day<br>
+                </p>
+                <p class="div4head4">
+                    <h5 class="div4heading2">   
+                    Course Fee:<br>
+                    </h5>
+                    Offline : 31500<br>
+                    Online : 29500<br>
+                </p>
+                <a class="div4link" href="">
+                    View More
+                </a>
+            </div>
+
+            <div class="div4main">
+                <img class="div4img" src="https://luminartechnolabbucket.s3.ap-south-1.amazonaws.com/fe964743-1e77-427b-aab2-274f850b0e70-asset-1.svg" alt="">
+                <h5 class="div4heading1">
+                    Software Testing Specialist<br>
+                </h5>
+                <p class="div4head1">
+                    Manual Testing, Java foundations, Mobile Testing, Automation Testing, Selenium IDE, Selenium Web driver, Selenium Advanced Web driver, Selenium Grid, TestNG, SQL workshop, Performance Testing, JMeter - Advanced, POSTMAN, API Testing, JIRA, Course Project<br>
+                </p>
+                <p class="div4head2">
+                    <h5 class="div4heading2">
+                        Next Batch:<br>
+                    </h5>
+                        Cochin: May 10th 2023 (Offline & Online)<br>
+                        Calicut: May 17th 2023 (03:30 pm - 05:30 pm)<br>
+                </p>
+                <p class="div4head3">       
+                    <h5 class="div4heading2">
+                        Duration:<br>
+                    </h5>
+                    4 Months, 5 Days a Week, 1.5 - 2 Hours/day<br>
+                </p>
+                <p class="div4head4">
+                    <h5 class="div4heading2">   
+                    Course Fee:<br>
+                    </h5>
+                    Offline : 31500<br>
+                    Online : 29500<br>
+                </p>
+                <a class="div4link" href="">
+                    View More
+                </a>
+            </div>
+
+            <div class="div4main">
+                <img class="div4img" src="https://luminartechnolabbucket.s3.ap-south-1.amazonaws.com/fe964743-1e77-427b-aab2-274f850b0e70-asset-1.svg" alt="">
+                <h5 class="div4heading1">
+                    Software Testing Specialist<br>
+                </h5>
+                <p class="div4head1">
+                    Manual Testing, Java foundations, Mobile Testing, Automation Testing, Selenium IDE, Selenium Web driver, Selenium Advanced Web driver, Selenium Grid, TestNG, SQL workshop, Performance Testing, JMeter - Advanced, POSTMAN, API Testing, JIRA, Course Project<br>
+                </p>
+                <p class="div4head2">
+                    <h5 class="div4heading2">
+                        Next Batch:<br>
+                    </h5>
+                        Cochin: May 10th 2023 (Offline & Online)<br>
+                        Calicut: May 17th 2023 (03:30 pm - 05:30 pm)<br>
+                </p>
+                <p class="div4head3">       
+                    <h5 class="div4heading2">
+                        Duration:<br>
+                    </h5>
+                    4 Months, 5 Days a Week, 1.5 - 2 Hours/day<br>
+                </p>
+                <p class="div4head4">
+                    <h5 class="div4heading2">   
+                    Course Fee:<br>
+                    </h5>
+                    Offline : 31500<br>
+                    Online : 29500<br>
+                </p>
+                <a class="div4link" href="">
+                    View More
+                </a>
+            </div>
+        
+        </div>
+
+        <div id="main6" class="container">
+            
+            <div class="div6main1">
+                <img class="div6img" src="https://www.luminartechnolab.com/static/media/MaskGroup4.2ce48556.png" alt="">
+            </div>
+
+            <div class="div6main2">
+                <h4 class="div6head1">
+                    Why Luminar Technolab
+                </h4>
+                <p class="div6head2">
+                    At Luminar Technolab we offer a comprehensive course that covers the whole aspects of the Data Science Ecosystem including Big Data Engineering, Data Science, Data Analytics, Data Visualization - Tableau, data processing, Data Munging, Machine Learning, Deep Learning & Artificial Intelligence.
+                </p>
+                <ul class="div6head3">
+                    <li class="imglist">
+                        ISO 9001:2015 Certified Institution
+                    </li>
+                    <li class="imglist">
+                        Affiliated to NACTET (http://www.nactetindia.org/affiliation.php)
+                    </li>
+                    <li class="imglist">
+                        Training by highly experienced and certified professionals
+                    </li>
+                    <li class="imglist">
+                        No slideshow (PPT) training, fully Hands-on training
+                    </li>
+                    <li class="imglist">
+                        Interactive session with interview QA's
+                    </li>
+                    <li class="imglist">
+                        Real-time projects scenarios & Certification Help
+                    </li>
+                    <li class="imglist">
+                        Most competitive & affordable course fees
+                    </li>
+                    <li class="imglist">
+                        Placement support for all courses
+                    </li>
+                    <li class="imglist">
+                        List of established & satisfied clients & students
+                    </li>
+                    <li class="imglist">
+                        Located Near Infopark Cochin.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+<!-- Footer -->
+        <footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+            <hr>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3 text-secondary"></i>
+                            <img src="https://www.luminartechnolab.com/static/media/logo%20vanner%200.1.ad159943.png" alt="" width="250px">
+                            <img src="data:image/png;base64,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" alt="" width="150px">
+                            <img src="https://www.luminartechnolab.com/static/media/iso.088bb326.png" alt="" width="100px">
+                        </h6>
+                        <a href="https://www.facebook.com/luminartechnolab"><img src="https://www.luminartechnolab.com/static/media/Facebook.9445b376.svg" alt="" width="45px"></a>
+                        <a href="https://www.instagram.com/luminartechnolab/"><img src="https://www.luminartechnolab.com/static/media/Instagram.5e6a2ca1.svg" alt="" width="50px"></a>
+                        <a href="https://www.youtube.com/c/LuminarTechnolab"><img src="https://www.luminartechnolab.com/static/media/Youtube.3523c095.svg" alt="" width="45px"></a>
+                        <a href="https://twitter.com/luminartechno/"><img src="https://www.luminartechnolab.com/static/media/Twitter.a62cab02.svg" alt="" width="45px"></a>
+                        <a href="https://www.linkedin.com/company/luminartechnolab/?originalSubdomain=in"><img src="https://www.luminartechnolab.com/static/media/Linkedin.99adbab7.svg" alt="" width="45px"></a>
+                    </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+                    <div class="col-lg-2 col-lg-2 col-xxl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            COURSES
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">MEA(R)N Stack Web Development Expert - Angular & React</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Software Testing Specialist</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Business Analytics - Power BI & Tableau</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Android Developer Expert Training In Kochi- Flutter</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Data Science - ML - AI - Big Data with Cloud & TABLEAU</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Python Django - Angular- Full Stack Web Development Expert</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">DATA SCIENCE - ML - AI - & TABLEAU</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Asp.net MVC with Angular - Full Stack</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Java Spring Full Stack</a>
+                        </p>
+                    </div>
+        
+  
+          <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            USEFUL LINKS
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Teachers & Staff</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Gallery</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Our Courses</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Refund & Cancellation Policy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Certification & Affiliation</a>
+                        </p>
+                    </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            CONTACT US
+                        </h6>
+                        <p>
+                            <!-- <i class="fas fa-home me-3 text-secondary"></i> -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Cochin
+                            </h6>
+                            Luminar Technolab Pvt Ltd
+                            3rd Floor, Vallamattam Estate,
+                            Seaport - Airport Rd, CSEZ,
+                            Kakkanad, Cochin, Kerala - 682037Call:+91 8086 651 651Email: contact@luminartechnolab.com
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Calicut
+                            </h6>
+                            Luminar Technolab Pvt Ltd
+                            2nd Floor, 61/10222 ,
+                            Mullath Building,
+                            Opp. KSRTC Bus Stand,
+                            Mavoor Road, Calicut, Kerala-673001Call: +91 8086 531 531, 0495 - 3573001Email: contact@luminartechnolab.com
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                    <!-- Grid row -->
+            </div>
+            </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © Luminar Technolab 2023 | Developed by Deepnetsoft
+                <a class="text-reset fw-bold" href=""> Privacy & Terms of Use</a>
+            </div>
+    <!-- Copyright -->
+    </footer>
+  <!-- Footer -->
+
+    </div>
+          
+</body>
+</html>
